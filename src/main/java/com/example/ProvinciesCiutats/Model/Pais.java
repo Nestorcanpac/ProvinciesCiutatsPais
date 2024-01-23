@@ -25,12 +25,13 @@ public class Pais {
     public Pais() {
     }
 
-    public Pais(int id, String nombre, String bandera, int población, int area_km2) {
+    public Pais(int id, String nombre, String bandera, int población, int area_km2, List<Provincia> provincias) {
         this.id = id;
         this.nombre = nombre;
         this.bandera = bandera;
         this.población = población;
         this.area_km2 = area_km2;
+        this.provincias = provincias;
     }
 
     public int getId() {
@@ -71,5 +72,13 @@ public class Pais {
 
     public void setArea_km2(int area_km2) {
         this.area_km2 = area_km2;
+    }
+
+    public List<Provincia> getProvincias() {
+        return provincias;
+    }
+
+    public void setProvincias(List<Provincia> provincias) {
+        this.provincias = provincias;
     }
 }
