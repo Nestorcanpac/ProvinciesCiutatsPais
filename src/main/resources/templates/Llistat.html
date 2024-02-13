@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Llistat d'Entitats</title>
+    <link rel="stylesheet" type="text/css" href="/css/llistat.css">
+</head>
+<body>
+<h1 th:text="'Llistat de ' + ${nomEntitat}"></h1>
+<ul>
+    <li th:each="entitat : ${entitat}" th:text="${entitat.nombre}"></li>
+</ul>
+</body>
+</html>
